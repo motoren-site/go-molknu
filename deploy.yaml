@@ -4,17 +4,17 @@ metadata:
   name: go-molknu
   namespace: apps
   labels:
-    k8s-app: go-molknu
+    app: go-molknu
 spec:
   replicas: 5
   selector:
     matchLabels:
-      k8s-app: go-molknu
+      app: go-molknu
   template:
     metadata:
       name: go-molknu
       labels:
-        k8s-app:  go-molknu
+        app: go-molknu
     spec:
       containers:
       - name: go-molknu
