@@ -43,5 +43,7 @@ jobs:
     - name: Apply ingress
       run: kubectl apply -f $GITHUB_WORKSPACE/ingress.yaml
 
+      
+
 
 
