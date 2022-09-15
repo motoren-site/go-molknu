@@ -12,13 +12,12 @@ spec:
       app: go-molknu
   template:
     metadata:
-      name: go-molknu
       labels:
         app: go-molknu
     spec:
       containers:
       - name: go-molknu
-        image: registry.digitalocean.com/olsen/go-molknu
+        image: registry.digitalocean.com/olsen/go-molknu:latest
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 8080
