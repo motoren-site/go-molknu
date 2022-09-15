@@ -38,10 +38,10 @@ jobs:
       run: kubectl apply -f $GITHUB_WORKSPACE/deploy.yaml
 
     - name: Apply service
-      run: kubectl apply -f $GITHUB_WORKSPACE/services.yml
+      run: kubectl apply -f $GITHUB_WORKSPACE/services.yaml
 
     - name: Apply ingress
-      run: kubectl apply -f $GITHUB_WORKSPACE/ingress.yml
+      run: kubectl apply -f $GITHUB_WORKSPACE/ingress.yaml
 
 
 
