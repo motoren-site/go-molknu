@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: apps
-  name: go-molknu
+  name: go-molknu-app
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
@@ -12,9 +12,9 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: "/go-molknu"
+        path: "/go-molknu-app"
         backend:
           service:
-            name: go-molknu
+            name: go-molknu-app
             port:
               number: 80

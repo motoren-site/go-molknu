@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: go-molknu
+  name: go-molknu-app
   labels:
-    app: go-molknu
+    app: go-molknu-app
 spec:
   selector:
-    app: go-molknu
+    app: go-molknu-app
   ports:
-  - name: go-molknu
+  - name: go-molknu-app
     protocol: TCP
     port: 80
     targetPort: 8080
