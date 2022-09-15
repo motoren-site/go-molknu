@@ -7,12 +7,12 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
-  - host: app.motoren.site
   rules:
-  - http:
+  - host: "app.motoren.site"
+    http:
       paths:
-      - path: /go-molknu
-        pathType: Prefix
+      - pathType: Prefix
+        path: "/go-molknu"
         backend:
           service:
             name: go-molknu
