@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: application
-        image: registry.digitalocean.com/olsen/go-molknu:$(echo $GITHUB_SHA | head -c7)
+        image: registry.digitalocean.com/olsen/go-molknu
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 8080
