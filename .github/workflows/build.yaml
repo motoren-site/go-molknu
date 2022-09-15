@@ -23,6 +23,10 @@ jobs:
     - name: Docker Push
       run: docker push registry.digitalocean.com/olsen/go-molknu:$(echo $GITHUB_SHA | head -c7)
 
+    - name: Docker Push
+      run: docker push registry.digitalocean.com/olsen/go-molknu:latest
+
+
     - name: Kubectl
       uses: matootie/dokube@v1.4.0
       with:
@@ -33,6 +37,6 @@ jobs:
     - name: Apply
       run: kubectl apply -f $GITHUB_WORKSPACE/deploy.yaml
 
-      
+
 
 
