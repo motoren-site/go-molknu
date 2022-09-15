@@ -9,14 +9,15 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      name: go-molknu
+      k8s-app: go-molknu
   template:
     metadata:
+      name: go-molknu
       labels:
-        name: go-molknu
+        k8s-app:  go-molknu
     spec:
       containers:
-      - name: application
+      - name: go-molknu
         image: registry.digitalocean.com/olsen/go-molknu
         imagePullPolicy: IfNotPresent
         ports:
