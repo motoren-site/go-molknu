@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: go-molknu
+  labels:
+    k8s-app: go-molknu
 spec:
   selector:
     app: go-molknu

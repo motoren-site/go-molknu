@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: go-molknu
   namespace: apps
+  labels:
+    k8s-app: go-molknu
 spec:
   replicas: 5
   selector:
