@@ -31,6 +31,6 @@ jobs:
         namespace: apps
 
     - name: Apply
-      run: kubectl apply -f $GITHUB_WORKSPACE/deploy.yml
+      run: kubectl apply -f deploy.yml
 
 
